@@ -15,8 +15,10 @@ void insert(stack_t **stack, unsigned int line)
 	{
 		if (bus.arg[0] == '-')
 			n++;
-		for (; bus.arg[n] > 57 || bus.arg[n] < 48)
-			tab = 1; }
+		for (; bus.arg[n] != '\0'; n++)
+		{
+			if (bus.arg[n] > 57 || bus.arg[n] < 48)
+				tab = 1; }
 	if (tab == 1)
 	{ fprintf(stderr, "L%d: usage: push integer\n", line);
 			fclose(bus.file);
