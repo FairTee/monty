@@ -3,7 +3,7 @@
 /**
  * remove_top - A funtion that prints the top of the stack
  * @stack: A double head pointer to stack
- * @line: Lin count
+ * @line: Line count
  * Return: null
  */
 void remove_top(stack_t **stack, unsigned int line)
