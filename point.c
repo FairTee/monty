@@ -10,7 +10,7 @@ void remove_top(stack_t **stack, unsigned int line)
 {
 	stack_t *s;
 
-	if (stack == NULL)
+	if (*stack == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n", line);
 		fclose(bus.file);
